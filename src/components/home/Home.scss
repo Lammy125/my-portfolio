@@ -1,0 +1,60 @@
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+  .container {
+    width: 300px;
+
+    .me {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .title {
+      display: inline-block;
+      color: #00abf0;
+      font-size: 21px;
+    }
+
+    .iconDiv {
+      display: flex;
+      padding: 1rem 0;
+      gap: 1rem;
+      color: #00abf0;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid #00abf0;
+        transition: 0.5s;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #00abf0;
+          color: #081b29;
+          box-shadow: 0 0 5px #00abf0;
+        }
+      }
+    }
+
+    .btnCon {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+  }
+}

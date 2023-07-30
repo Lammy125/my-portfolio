@@ -1,15 +1,16 @@
 .contact {
-  padding-top: 5rem;
+  padding: 5rem 0 7rem 0;
 
   .contactCon {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
+    gap: 3.5rem;
 
     .contactOptions {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem;
 
       .contactOption {
         background-color: #013a51;
@@ -28,8 +29,12 @@
         }
 
         .link {
-          margin-top: 0.5rem;
+          margin-top: 10px;
           font-size: 0.8rem;
+
+          a {
+            color: #00abf0;
+          }
         }
       }
     }
@@ -48,7 +53,20 @@
         background-color: transparent;
         resize: none;
         color: white;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    .contactCon {
+      flex-direction: column;
     }
   }
 }

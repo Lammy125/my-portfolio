@@ -1,15 +1,45 @@
 import "./Contact.scss";
+import { useRef, useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import emailjs from "emailjs-com";
+import { toast } from "react-hot-toast";
+import { CircularProgress } from "@mui/material";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const form = useRef();
   const contactData = {
     title: "Contact me",
     email: "adeyemoolamide47@gmail.com",
     whatsapp: "+2348179347214",
     messenger: "adeyemo.olamide3",
   };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    setIsLoading(true); // Set isLoading to true when form is submitted
+
+    try {
+      const result = await emailjs.sendForm(
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_YOUR_PUBLIC_KEY
+      );
+      toast.success("Message sent successfully");
+
+      console.log(result.text);
+    } catch (error) {
+      console.log(error.text);
+      toast.error("Message not sent");
+    }
+
+    setIsLoading(false); // Set isLoading back to false after form submission
+    e.target.reset();
+  };
+
   return (
     <section id="contact">
       <div className="contact">
@@ -51,11 +81,11 @@ const Contact = () => {
             </article>
           </div>
           <div>
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <input
                 type="text"
                 name="name"
-                placeholder="Enter Full name"
+                placeholder="Enter full name"
                 required
               />
               <input
@@ -64,16 +94,35 @@ const Contact = () => {
                 placeholder="Enter email"
                 required
               />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Enter subject"
+                required
+              />
               <textarea
-                name=""
+                name="message"
                 id=""
-                cols="40"
+                cols="50"
                 rows="7"
                 placeholder="Enter message"
                 required
               ></textarea>
-              <button type="submit" className="btn">
-                Send message
+
+              <button
+                type="submit"
+                className="btn btn_load"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <CircularProgress
+                    size={15}
+                    thickness={7}
+                    style={{ color: "#00abf0" }}
+                  />
+                ) : (
+                  "Send message"
+                )}
               </button>
             </form>
           </div>

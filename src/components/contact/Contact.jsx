@@ -115,11 +115,7 @@ const Contact = () => {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  <CircularProgress
-                    size={15}
-                    thickness={7}
-                    style={{ color: "#00abf0" }}
-                  />
+                  <CircularProgress size={15} thickness={7} />
                 ) : (
                   "Send message"
                 )}

@@ -70,9 +70,9 @@ const Home = () => {
             <Link to={CV} target="_blank">
               <button className="btn">Download CV</button>
             </Link>
-            <Link to="#contact">
+            <a href="#contact">
               <button className="btn">Let talk</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

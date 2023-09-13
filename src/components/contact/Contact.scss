@@ -62,10 +62,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .contact {
+    padding: 0 3rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .contact {
+    padding: 0 1rem;
+
     .contactCon {
       flex-direction: column;
     }

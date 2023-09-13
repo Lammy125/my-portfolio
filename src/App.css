@@ -76,7 +76,7 @@ h5 {
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .app {
     padding: 0 3rem;
   }
@@ -86,4 +86,4 @@ h5 {
   .app {
     padding: 0 1rem;
   }
-}
+} */

@@ -40,6 +40,7 @@
 
 @media screen and (max-width: 1024px) {
   .about {
+    padding: 0 3rem;
     flex-direction: column;
 
     .image {
@@ -57,7 +58,7 @@
 
 @media screen and (max-width: 600px) {
   .about {
-    padding: 0;
+    padding: 0 1rem;
 
     .imgCon {
       padding-top: 3rem;

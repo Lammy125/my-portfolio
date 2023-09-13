@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./About.scss";
 import myImage from "../../assets/Adeyemo_Peter-removebg-preview.png";
 
@@ -15,13 +15,18 @@ const About = () => {
     ],
   };
 
-  // State to track whether the "Read more" button has been clicked
   const [showFullContent, setShowFullContent] = useState(false);
-
-  // Number of paragraphs to show initially
   const initialParagraphsToShow = 2;
-  const showAllParagraphs =
-    aboutData.paragraphs.length <= initialParagraphsToShow || showFullContent;
+
+  const paragraphsContainerRef = useRef(null);
+
+  // Function to reset to the default view
+  const resetToDefaultView = () => {
+    setShowFullContent(false);
+    if (paragraphsContainerRef.current) {
+      paragraphsContainerRef.current.scrollTop = 0;
+    }
+  };
 
   return (
     <section id="about">
@@ -31,27 +36,42 @@ const About = () => {
         </div>
         <div className="content">
           <h2>{aboutData.title}</h2>
-          {aboutData.paragraphs
-            .slice(
-              0,
-              showAllParagraphs
-                ? aboutData.paragraphs.length
-                : initialParagraphsToShow
-            )
-            .map((paragraph, index) => (
-              <p key={index} className="textContent">
-                {paragraph}
-              </p>
-            ))}
+          <div
+            ref={paragraphsContainerRef}
+            className="paragraphs-container"
+            style={{
+              overflow: showFullContent ? "auto" : "hidden",
+              maxHeight: showFullContent ? "320px" : "200px",
+            }}
+          >
+            {aboutData.paragraphs
+              .slice(
+                0,
+                showFullContent
+                  ? aboutData.paragraphs.length
+                  : initialParagraphsToShow
+              )
+              .map((paragraph, index) => (
+                <p key={index} className="textContent">
+                  {paragraph}
+                </p>
+              ))}
+          </div>
           {/* Render the "Read more" button only if there are more paragraphs to show */}
           {aboutData.paragraphs.length > initialParagraphsToShow && (
             <div className="btnCon">
-              <button
-                className="btn"
-                onClick={() => setShowFullContent(!showFullContent)}
-              >
-                {showFullContent ? "Show less" : "Read more"}
-              </button>
+              {showFullContent ? (
+                <button className="btn" onClick={resetToDefaultView}>
+                  Show less
+                </button>
+              ) : (
+                <button
+                  className="btn"
+                  onClick={() => setShowFullContent(!showFullContent)}
+                >
+                  Read more
+                </button>
+              )}
             </div>
           )}
         </div>

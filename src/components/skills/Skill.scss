@@ -1,0 +1,35 @@
+.skills {
+  padding: 5rem 5rem 7rem 5rem;
+
+  .skillCon {
+    .skillContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .skillData {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #013a51;
+        padding: 1.2rem;
+        margin: 0.5rem;
+        border-radius: 10px;
+        transition: 1s ease-in-out;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #013a51;
+          transform: scale(1.05);
+        }
+
+        .skillImage {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

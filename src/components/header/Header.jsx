@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./Header.scss";
+import { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import CV from "../../assets/Peter's CV.pdf";

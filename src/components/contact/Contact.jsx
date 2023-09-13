@@ -46,7 +46,7 @@ const Contact = () => {
         <h2>{contactData.title}</h2>
         <div className="contactCon">
           <div className="contactOptions">
-            <div className="contactOption">
+            <article className="contactOption">
               <MdOutlineEmail size={20} className="icon" />
               <h4>Email</h4>
               <h5>{contactData.email}</h5>
@@ -55,7 +55,7 @@ const Contact = () => {
                   Send a message
                 </a>
               </div>
-            </div>
+            </article>
             <article className="contactOption">
               <RiMessengerLine size={23} className="icon" />
               <h4>Messenger</h4>

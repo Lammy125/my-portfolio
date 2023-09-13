@@ -5,13 +5,13 @@
   text-align: center;
 }
 
-.app {
-  padding: 0 5rem;
-}
-
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -74,10 +74,6 @@ h5 {
 
 .btn:hover::before {
   width: 100%;
-}
-
-section {
-  height: 100vh;
 }
 
 @media screen and (max-width: 1024px) {

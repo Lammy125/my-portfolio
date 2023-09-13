@@ -9,6 +9,8 @@ import {
 } from "react-icons/fa";
 import CV from "../../assets/Peter's CV.pdf";
 import { Link } from "react-router-dom";
+import backgroundImg from "../../assets/MF_LiveLab_Series_Hero-1-scaled.jpg";
+import Header from "../header/Header";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -44,6 +46,10 @@ const Home = () => {
   return (
     <section id="#">
       <div className="home">
+        <Header />
+        <div className="mask">
+          <img src={backgroundImg} alt="background image" className="heroImg" />
+        </div>
         <div className="container">
           <div className="me">
             <h3>Hi, It&apos;s Me</h3>

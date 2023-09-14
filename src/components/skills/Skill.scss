@@ -1,19 +1,21 @@
 .skills {
-  padding: 5rem 5rem 7rem 5rem;
+  padding: 5rem 5rem 8rem 5rem;
+  background-color: #0d1f2c;
 
   .skillCon {
     .skillContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 30px;
+      padding: 3rem 0;
 
       .skillData {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color: #013a51;
-        padding: 1.2rem;
-        margin: 0.5rem;
+        padding: 2rem;
+        // margin: 1.4rem;
         border-radius: 10px;
         transition: 1s ease-in-out;
         border: 1px solid transparent;
@@ -36,12 +38,29 @@
 
 @media screen and (max-width: 1024px) {
   .skills {
-    padding: 0 3rem;
+    padding: 5rem 3rem;
+
+    .skillCon {
+      .skillContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 0;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .skills {
-    padding: 0 1rem;
+    padding: 3rem 1rem 6rem 1rem;
+
+    .skillCon {
+      .skillContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+      }
+    }
   }
 }

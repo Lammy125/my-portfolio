@@ -36,7 +36,6 @@ const Skill = () => {
       { name: "NPM", image: npmImage },
     ],
   };
-  const itemsPerRow = 4;
 
   return (
     <section id="skills">
@@ -45,11 +44,7 @@ const Skill = () => {
         <div className="skillCon">
           <div className="skillContainer">
             {skillData.skill.map((skill, index) => (
-              <div
-                className="skillData"
-                key={index}
-                style={{ flex: `0 0 calc(${100 / itemsPerRow}% - 10px)` }}
-              >
+              <div className="skillData" key={index}>
                 <img
                   src={skill.image}
                   alt={skill.name}

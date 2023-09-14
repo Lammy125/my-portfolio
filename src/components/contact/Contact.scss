@@ -1,5 +1,6 @@
 .contact {
   padding: 5rem 5rem 7rem 5rem;
+  background-color: #0d1f2c;
 
   .contactCon {
     display: flex;
@@ -63,13 +64,14 @@
 
 @media screen and (max-width: 1024px) {
   .contact {
-    padding: 0 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contact {
-    padding: 0 1rem;
+    padding: 3rem 1rem 6rem 1rem;
 
     .contactCon {
       flex-direction: column;

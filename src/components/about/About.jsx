@@ -16,7 +16,7 @@ const About = () => {
   };
 
   const [showFullContent, setShowFullContent] = useState(false);
-  const initialParagraphsToShow = 2;
+  const initialParagraphsToShow = 1;
 
   const paragraphsContainerRef = useRef(null);
 

@@ -20,7 +20,9 @@ const Header = () => {
 
   return (
     <div className="header">
-      <h1>Portfolio.</h1>
+      <a href="#" className="portfolio">
+        <h1>Portfolio.</h1>
+      </a>
       <ul className={click ? "list active" : "list"}>
         <li>
           <a

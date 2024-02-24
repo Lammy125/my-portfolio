@@ -7,6 +7,10 @@
   width: 100%;
   z-index: 10;
 
+  .portfolio {
+    cursor: pointer;
+    color: #ffffff;
+  }
   .list {
     display: flex;
     align-items: center;

@@ -6,7 +6,7 @@ const About = () => {
   const aboutData = {
     title: "About me",
     paragraphs: [
-      "Hello there!, I'm a passionate frontend developer, software engineer, and web developer with a keen eye for detail and a relentless drive for excellence. I possess a unique ability to keenly observe the intricacies of a project, enabling me to understand the requirements and goals thoroughly. By closely examining user interactions and behaviors, I strive to create intuitive and user-friendly interfaces that enhance the overall user experience.",
+      "Hello there!, I'm a passionate frontend developer with a keen eye for detail and a relentless drive for excellence. I possess a unique ability to keenly observe the intricacies of a project, enabling me to understand the requirements and goals thoroughly. By closely examining user interactions and behaviors, I strive to create intuitive and user-friendly interfaces that enhance the overall user experience.",
       "As a detail-oriented individual, I believe that even the smallest elements can significantly impact the quality of a project. I meticulously scrutinize code, design layouts, and functionalities to ensure precision and accuracy. My dedication to perfection empowers me to deliver projects with clean, efficient, and maintainable code.",
       "I thrive on perseverance and resilience, always seeking innovative solutions to overcome obstacles. Whether it's debugging a complex issue or refining a feature to meet the highest standards, I approach every challenge with determination and tenacity.",
       "My expertise lies in frontend development, where I bring life to creative designs and turn them into functional, responsive, and visually appealing websites and applications.",

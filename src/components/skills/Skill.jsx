@@ -6,7 +6,7 @@ import chakraUiImage from "../../assets/Chakra UI.png";
 import muiImage from "../../assets/Mui.png";
 import figmaImage from "../../assets/Figma.png";
 import viteImage from "../../assets/Vite.png";
-import npmImage from "../../assets//npm.png";
+import typeScriptImage from "../../assets/Typescript.png";
 import tailwindImage from "../../assets/Tailwind.png";
 import gitImage from "../../assets/Git.png";
 import adobeXDImage from "../../assets/adobe-xd.png";
@@ -33,7 +33,7 @@ const Skill = () => {
       { name: "Git", image: gitImage },
       { name: "Adobe XD", image: adobeXDImage },
       { name: "Vite", image: viteImage },
-      { name: "NPM", image: npmImage },
+      { name: "TypeScript", image: typeScriptImage },
     ],
   };
 

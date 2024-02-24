@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className="header">
       <h1>Portfolio.</h1>
-      <ul className="list">
+      <ul className={click ? "list active" : "list"}>
         <li>
           <a
             href="#"

@@ -1,5 +1,5 @@
 .navBar {
-  background: #013a51;
+  background: rgba(1, 58, 81, 0.5);
   max-width: fit-content;
   display: block;
   padding: 0.7rem 1rem;
@@ -27,11 +27,10 @@
     font-size: 1.1rem;
 
     &:hover {
-      background: rgb(0, 0, 0, 0.3);
+      background: #00abf0;
     }
   }
 }
-
 
 @media screen and (max-width: 1024px) {
 }

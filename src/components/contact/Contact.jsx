@@ -43,10 +43,10 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="contact">
-        <h2>{contactData.title}</h2>
+        <h2 data-aos="fade-down">{contactData.title}</h2>
         <div className="contactCon">
           <div className="contactOptions">
-            <article className="contactOption">
+            <article className="contactOption" data-aos="zoom-in">
               <MdOutlineEmail size={20} className="icon" />
               <h4>Email</h4>
               <h5>{contactData.email}</h5>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </a>
               </div>
             </article>
-            <article className="contactOption">
+            <article className="contactOption" data-aos="zoom-in">
               <RiMessengerLine size={23} className="icon" />
               <h4>Messenger</h4>
               <h5>{contactData.messenger}</h5>
@@ -66,7 +66,7 @@ const Contact = () => {
                 </a>
               </div>
             </article>
-            <article className="contactOption">
+            <article className="contactOption" data-aos="zoom-in">
               <BsWhatsapp size={20} className="icon" />
               <h4>WhatsApp</h4>
               <h5>{contactData.whatsapp}</h5>
@@ -81,7 +81,7 @@ const Contact = () => {
             </article>
           </div>
           <div>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} data-aos="fade-left">
               <input
                 type="text"
                 name="name"
@@ -113,6 +113,7 @@ const Contact = () => {
                 type="submit"
                 className="btn btn_load"
                 disabled={isLoading}
+                data-aos="flip-up"
               >
                 {isLoading ? (
                   <CircularProgress size={15} thickness={7} />

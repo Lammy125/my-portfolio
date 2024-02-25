@@ -60,10 +60,10 @@ const Project = () => {
   return (
     <section id="project">
       <div className="project">
-        <h2>{projectData.title}</h2>
+        <h2 data-aos="fade-right">{projectData.title}</h2>
         <div className="projectCon">
           {projectData.project.map((project, index) => (
-            <div className="projectBox" key={index}>
+            <div className="projectBox" key={index} data-aos="flip-left">
               <img src={project.image} alt={project.title} />
               <div className="projectContent">
                 <h4>{project.projectTitle}</h4>

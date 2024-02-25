@@ -40,11 +40,11 @@ const Skill = () => {
   return (
     <section id="skills">
       <div className="skills">
-        <h2>{skillData.title}</h2>
+        <h2 data-aos="fade-right">{skillData.title}</h2>
         <div className="skillCon">
           <div className="skillContainer">
             {skillData.skill.map((skill, index) => (
-              <div className="skillData" key={index}>
+              <div className="skillData" key={index} data-aos="zoom-in">
                 <img
                   src={skill.image}
                   alt={skill.name}

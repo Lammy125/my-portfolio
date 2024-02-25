@@ -20,10 +20,12 @@ const Header = () => {
 
   return (
     <div className="header">
-      <a href="#" className="portfolio">
-        <h1>Portfolio.</h1>
-      </a>
-      <ul className={click ? "list active" : "list"}>
+      <div data-aos="fade-right">
+        <a href="#" className="portfolio">
+          <h1>Portfolio.</h1>
+        </a>
+      </div>
+      <ul className={click ? "list active" : "list"} data-aos="fade-left">
         <li>
           <a
             href="#"

@@ -51,14 +51,14 @@ const Home = () => {
           <img src={backgroundImg} alt="background image" className="heroImg" />
         </div>
         <div className="container">
-          <div className="me">
+          <div className="me" data-aos="fade-right">
             <h3>Hi, It&apos;s Me</h3>
             <h1>Peter Adeyemo</h1>
             <h3>
               And I&apos;m a <span ref={textRef} className="title"></span>
             </h3>
           </div>
-          <div className="iconDiv">
+          <div className="iconDiv" data-aos="zoom-in">
             <div className="icon">
               <FaFacebookF size={18} onClick={handleFacebookClick} />
             </div>

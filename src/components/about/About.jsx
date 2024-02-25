@@ -31,11 +31,11 @@ const About = () => {
   return (
     <section id="about">
       <div className="about">
-        <div className="imgCon">
+        <div className="imgCon" data-aos="flip-left">
           <img src={myImage} alt="my image" className="image" />
         </div>
         <div className="content">
-          <h2>{aboutData.title}</h2>
+          <h2 data-aos="fade-down">{aboutData.title}</h2>
           <div
             ref={paragraphsContainerRef}
             className="paragraphs-container"
@@ -43,6 +43,7 @@ const About = () => {
               overflow: showFullContent ? "auto" : "hidden",
               maxHeight: showFullContent ? "320px" : "200px",
             }}
+            data-aos="fade-right"
           >
             {aboutData.paragraphs
               .slice(
@@ -59,7 +60,7 @@ const About = () => {
           </div>
           {/* Render the "Read more" button only if there are more paragraphs to show */}
           {aboutData.paragraphs.length > initialParagraphsToShow && (
-            <div className="btnCon">
+            <div className="btnCon" data-aos="flip-up">
               {showFullContent ? (
                 <button className="btn" onClick={resetToDefaultView}>
                   Show less

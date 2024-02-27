@@ -2,7 +2,7 @@ import "./Project.scss";
 import { RiExternalLinkFill } from "react-icons/ri";
 import adviceGenerator from "../../assets/advice generator.jpg";
 import deliverX from "../../assets/deliver x.jpg";
-import googleSearch from "../../assets/google search.jpg";
+import pricingComponent from "../../assets/pricing component with toggle button.jpg";
 import interactiveCard from "../../assets/interactive card.png";
 import countryRestApi from "../../assets/country api.png";
 import cardSection from "../../assets/card section.png";
@@ -37,9 +37,9 @@ const Project = () => {
         image: countryRestApi,
       },
       {
-        projectTitle: "google-search",
-        text: "Google Search is the world's most widely used search engine, developed by Google Inc. It serves as a gateway to an immense repository of information available on the internet.",
-        image: googleSearch,
+        projectTitle: "Pricing-component-with-toggle",
+        text: "The 'Pricing Component with Toggle' is a dynamic and user-friendly interface designed to showcase different pricing plans with the added functionality of a toggle switch.",
+        image: pricingComponent,
       },
     ],
   };

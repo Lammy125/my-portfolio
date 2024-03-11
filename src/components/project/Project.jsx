@@ -6,6 +6,9 @@ import pricingComponent from "../../assets/pricing component with toggle button.
 import interactiveCard from "../../assets/interactive card.png";
 import countryRestApi from "../../assets/country api.png";
 import cardSection from "../../assets/card section.png";
+import socialMediaDashboard from "../../assets/social media dashboard.jpeg";
+import sliderImage from "../../assets/slider images.jpeg";
+import countdownTimer from "../../assets/countdown timer.png";
 
 const Project = () => {
   const projectData = {
@@ -41,6 +44,21 @@ const Project = () => {
         text: "The 'Pricing Component with Toggle' is a dynamic and user-friendly interface designed to showcase different pricing plans with the added functionality of a toggle switch.",
         image: pricingComponent,
       },
+      {
+        projectTitle: "social-media-dashboard",
+        text: "The 'Social Media Dashboard with Light/Dark Mode' is a versatile and visually appealing user interface designed to enhance the user experience of managing and monitoring social media activities.",
+        image: socialMediaDashboard,
+      },
+      {
+        projectTitle: "testimonial-sliders",
+        text: "The 'Testimonial Sliders' component is a dynamic and interactive feature commonly integrated into websites to showcase users testimonials in a visually appealing manner.",
+        image: sliderImage,
+      },
+      {
+        projectTitle: "countdown-timer",
+        text: "The 'Countdown Timer' is a digital clock that counts down from a specified time interval, creating a visual representation of the time remaining until a specific event, deadline, or activity.",
+        image: countdownTimer,
+      },
     ],
   };
 
@@ -51,6 +69,9 @@ const Project = () => {
     "https://four-card-component-section.netlify.app/",
     "https://lammy-country-api.netlify.app/",
     "https://google-search-messi.netlify.app/",
+    "https://social-media-dashboard-light-darkmode.netlify.app/",
+    "https://testimonial-sliders.netlify.app/",
+    "https://lammy-countdown-timer.netlify.app/",
   ];
 
   const handleClick = (link) => {

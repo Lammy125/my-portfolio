@@ -14,18 +14,9 @@
 
   .content {
     text-align: left;
-    .paragraphs-container {
-      &::-webkit-scrollbar {
-        width: 12px;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background-color: transparent;
-      }
-      .textContent {
-        font-size: 21px;
-        margin-bottom: 1rem;
-      }
+    .textContent {
+      font-size: 21px;
+      margin-bottom: 1rem;
     }
     .btnCon {
       margin-top: 1.5rem;

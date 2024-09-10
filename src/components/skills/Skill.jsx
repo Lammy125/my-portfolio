@@ -14,6 +14,7 @@ import htmlImage from "../../assets/Html.png";
 import cssImage from "../../assets/Css.png";
 import bootstrapImage from "../../assets/Bootstrap.png";
 import sassImage from "../../assets/Sass.png";
+import nextImage from "../../assets/Next.png";
 
 const Skill = () => {
   const skillData = {
@@ -21,7 +22,8 @@ const Skill = () => {
     skill: [
       { name: "Javascript", image: javascriptImage },
       { name: "React", image: reactImage },
-      { name: "Redux", image: reduxImage },
+      { name: "Next JS", image: nextImage },
+      // { name: "Redux", image: reduxImage },
       { name: "Chakra UI", image: chakraUiImage },
       { name: "Material UI", image: muiImage },
       { name: "Html5", image: htmlImage },

@@ -29,6 +29,9 @@ const Contact = () => {
         import.meta.env.VITE_YOUR_PUBLIC_KEY
       );
       toast.success("Message sent successfully");
+      console.log("Service ID:", import.meta.env.VITE_YOUR_SERVICE_ID);
+      console.log("Template ID:", import.meta.env.VITE_YOUR_TEMPLATE_ID);
+      console.log("Public Key:", import.meta.env.VITE_YOUR_PUBLIC_KEY);
 
       console.log(result.text);
     } catch (error) {

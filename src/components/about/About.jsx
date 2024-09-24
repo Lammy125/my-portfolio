@@ -5,7 +5,7 @@ const About = () => {
   const aboutData = {
     title: "About me",
     paragraphs: [
-      "Front-End Engineer with over 2 years of experience using ReactJS, NextJS Framework, Tailwind CSS & TypesScript in implementing designs, building scalable applications & optimizing applications for good user experience, co-operating with product designers & managers. I have a strong academic background in Mathematics with Computer Science, which I obtained from the University of Lagos in 2019.",
+      "Front-End Engineer with over 2 years of experience using HTML, CSS, JavaScript, ReactJS, NextJS Framework, Tailwind CSS & TypesScript in implementing designs, building scalable applications & optimizing applications for good user experience, co-operating with product designers & managers. I have a strong academic background in Mathematics with Computer Science, which I obtained from the University of Lagos in 2019.",
     ],
   };
 

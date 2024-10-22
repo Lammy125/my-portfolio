@@ -74,6 +74,7 @@ const Project = () => {
     "https://interactive-card-rating-review.netlify.app/",
     "https://four-card-component-section.netlify.app/",
     "https://lammy-country-api.netlify.app/",
+    "https://lammy-event-management-dashboard.netlify.app/",
     "https://pricing-component-toggle-button.netlify.app/",
     "https://social-media-dashboard-light-darkmode.netlify.app/",
     "https://testimonial-sliders.netlify.app/",

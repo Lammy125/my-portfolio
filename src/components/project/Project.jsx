@@ -9,6 +9,7 @@ import cardSection from "../../assets/card section.png";
 import socialMediaDashboard from "../../assets/social media dashboard.jpeg";
 import sliderImage from "../../assets/slider images.jpeg";
 import countdownTimer from "../../assets/countdown timer.png";
+import eventManagementSystem from "../../assets/event management system.webp";
 
 const Project = () => {
   const projectData = {
@@ -18,6 +19,11 @@ const Project = () => {
         projectTitle: "advice-generator",
         text: "Introducing the 'Advice Generator App' – an ideal project that allows users to generates random quotes of insightful advice",
         image: adviceGenerator,
+      },
+      {
+        projectTitle: "country-rest-api",
+        text: "The 'Country REST API' is a valuable resource that allows users to access a range of data, including details about a country's geography, population, currency, time zone, and more.",
+        image: countryRestApi,
       },
       {
         projectTitle: "deliver-x",
@@ -35,9 +41,9 @@ const Project = () => {
         image: cardSection,
       },
       {
-        projectTitle: "country-rest-api",
-        text: "The 'Country REST API' is a valuable resource that allows users to access a range of data, including details about a country's geography, population, currency, time zone, and more.",
-        image: countryRestApi,
+        projectTitle: "event-management-system",
+        text: "The 'Event management system' is a software solution platform designed to assist organizations in planning, organizing, and executing events efficiently.",
+        image: eventManagementSystem,
       },
       {
         projectTitle: "Pricing-component-with-toggle",
